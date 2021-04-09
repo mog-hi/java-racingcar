@@ -1,5 +1,19 @@
 # 미션 - 자동차 경주 게임
 
+## 📌 구현할 기능
+- 시도할 횟수 입력받기
+  - 입력값이 숫자인지 확인
+- 경주할 자동차 이름 입력받기 
+   - 쉼표(,)를 기준으로 입력했는지 확인
+   - 이름이 5자 이하인지 확인
+   - 경주할 자동차의 수 확인
+- 자동차 경주 진행
+  - 랜덤수 추출 및 전진여부 판단
+  - 각 경주 차량별 이동 상황 출력
+  - 공백 출력 
+- 최종 우승자 판단 및 출력
+- 예외 상황 시 에러 문구 출력
+
 ## 🚀 기능 요구사항
 - 주어진 횟수 동안 n대의 자동차는 전진 또는 멈출 수 있다.
 - 각 자동차에 이름을 부여할 수 있다. 전진하는 자동차를 출력할 때 자동차 이름을 같이 출력한다.
@@ -139,17 +153,6 @@ public class Car {
 }
 ```
 
-<br>
-
-## 📈 진행 요구사항
-- 미션은 [java-racingcar-precourse 저장소](https://github.com/woowacourse/java-racingcar-precourse) 를 fork/clone해 시작한다.
-- 기능을 구현하기 전에 java-racingcar-precourse/docs/README.md 파일에 구현할 기능 목록을 정리해 추가한다.
-- git의 commit 단위는 앞 단계에서 README.md 파일에 정리한 기능 목록 단위로 추가한다.
-  - [AngularJS Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153) 참고해 commit log를 남긴다.
-- [프리코스 과제 제출 문서](https://github.com/woowacourse/woowacourse-docs/tree/master/precourse) 절차를 따라 미션을 제출한다.
-  - [프리코스 과제 FAQ](https://github.com/woowacourse/woowacourse-docs/tree/master/precourse/faq) 문서를 참고하여 진행할 수 있다.
-
-<br>
 
 ## 📝 License
 
