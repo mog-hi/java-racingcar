@@ -22,4 +22,12 @@ public class CarTest {
             Car car = new Car(null);
         });
     }
+    @ParameterizedTest(name = "1자리 미만이거나 5자리를 초과하면 IllegalArgumentException 발생 (carName = {arguments})")
+    @DisplayName("5자리 이하인지 확인")
+    @ValueSource(strings = {"", "overFive"})
+    public void carNameShouldBeUnderFiveTest(String name) {
+        assertThrows(IllegalArgumentException.class, () -> {
+           Car.of(name);
+        });
+    }
 }
