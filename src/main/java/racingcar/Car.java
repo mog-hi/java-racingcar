@@ -11,6 +11,8 @@ public class Car {
     public String getName() {
         return name;
     }
-
+    public static Car of(String name) {
+        return new Car(name);
+    }
     // 추가 기능 구현
 }
