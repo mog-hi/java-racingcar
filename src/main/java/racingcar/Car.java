@@ -1,10 +1,13 @@
 package racingcar;
 
+import racingcar.validator.CarValidator;
+
 public class Car {
     private final String name;
     private int position = 0;
 
     public Car(String name) {
+        CarValidator.validateCarNameIsNullOrEmpty(name);
         this.name = name;
     }
 
