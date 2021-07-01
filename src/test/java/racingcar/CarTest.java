@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CarTest {
     @Test
-    @DisplayName("경주할 자동차 이름 입력 체크")
+    @DisplayName("경주할 자동차 이름 입력 확인")
     public void getNameTest() {
         String carName = "car";
         Car car = Car.of(carName); // static 메소드 접근 방법
@@ -29,5 +29,13 @@ public class CarTest {
         assertThrows(IllegalArgumentException.class, () -> {
            Car.of(name);
         });
+    }
+    @Test
+    @DisplayName("4이상의 값이 들어왔을 때 1칸 이동하는지 확인 ")
+    public void moveCarTest() {
+        Car car = new Car("car");
+        int beforePosition = car.getPosition();
+        car.move(4);
+        assertEquals(car.getPosition(), beforePosition+1);
     }
 }
