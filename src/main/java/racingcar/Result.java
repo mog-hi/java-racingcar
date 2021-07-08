@@ -20,11 +20,10 @@ public class Result {
                 winners.add(s.getName());
             }
         });
-        System.out.println(winners.get(0));
         return winners;
     }
 
-    private int getMaxPosition() {
+    public int getMaxPosition() {
         int maxPosition = 0;
         for (Car car : cars.getCars()) {
             if (maxPosition < car.getPosition()) {
