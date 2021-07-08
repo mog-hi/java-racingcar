@@ -16,6 +16,13 @@ public class Cars {
     public static Cars of(List<Car> cars) {
         return new Cars(cars);
     }
+    public static Cars of(String[] names) {
+        List<Car> cars = new ArrayList<>();
+        for (String name: names) {
+            cars.add(Car.of(name));
+        }
+        return new Cars(cars);
+    }
     public List<Car> getCars() {
         return cars;
     }
