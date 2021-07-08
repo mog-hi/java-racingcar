@@ -15,7 +15,41 @@
 - 예외 상황 시 에러 문구 출력
 
 ## 📂 디렉토리 구조 
-
-## ✍🏻 클래스 설명
-
+```
+├─main/java/racingcar
+│  │
+│  ├─controller
+│  │      GameCotroller
+│  ├─domain
+│  │      Car
+│  │      Cars
+│  │      Result
+│  │      Round
+│  ├─utils
+│  │      RandomUtils
+│  └─view
+│         inputView
+│         outputView
+│
+├─test/java/racingcar
+│  │  CarTest
+│  │  CarsTest
+│  │  ResultTest
+│  └─ RoundTest
+│
+└─README.md
+```
 ## 💻 입출력 예시
+- 경주할 자동차 이름, 시도할 횟수 입력 
+```aidl
+자동차 이름을 ,로 구분해서 입력하시오
+juhi,tom,lisa
+```
+- 실행결과 출력
+```aidl
+실행 결과
+juhi : ------
+tom : -----
+lisa : ---
+최종 우승자 : juhi
+```
