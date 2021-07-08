@@ -1,7 +1,7 @@
 package racingcar.controller;
 
-import racingcar.Cars;
-import racingcar.Round;
+import racingcar.domain.Cars;
+import racingcar.domain.Round;
 import racingcar.utils.RandomUtils;
 import racingcar.view.InputView;
 import racingcar.view.OutputView;
