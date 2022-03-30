@@ -27,9 +27,7 @@ public class CarTest {
     @DisplayName("5자리 이하인지 확인")
     @ValueSource(strings = {"", "overFive"})
     public void carNameShouldBeUnderFiveTest(String name) {
-        assertThrows(IllegalArgumentException.class, () -> {
-           Car.of(name);
-        });
+        assertThrows(IllegalArgumentException.class, () -> Car.of(name));
     }
     @Test
     @DisplayName("4이상의 값이 들어왔을 때 1칸 이동하는지 확인 ")
@@ -37,6 +35,6 @@ public class CarTest {
         Car car = new Car("car");
         int beforePosition = car.getPosition();
         car.move(4);
-        assertEquals(car.getPosition(), beforePosition+1);
+        assertEquals(car.getPosition(), beforePosition);
     }
 }
